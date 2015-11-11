@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<script src="../../../js/jquery-1.11.1.min.js"></script>
+
+  </head>
+  <body>
+
+	<button id="appendBtn">append</button>
+
+	<div id="contentDiv"></div>
+    	<script type="text/javascript">
+
+		$('#appendBtn').on('click',function(){
+			var str='<a id="append_a">append---click me</a>';
+			$('#contentDiv').append(str);
+		});
+
+		$('#append_a').on('click',function(){
+			alert(1);
+		});
+		$('#contentDiv').delegate('#append_a','click',function(){
+			alert(3);
+		});
+
+	</script>
+  </body>
+</html>
