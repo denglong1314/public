@@ -45,7 +45,7 @@
 			$('#contentDiv').append(str);
 		});
 
-		$('a').on('click',function(){
+		$('a').bind('click',function(){
 			alert(1);
 		});
 		$('#contentDiv').delegate('a','click',function(){

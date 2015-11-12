@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		code{color: #c7254e;}
+		pre{background-color: #f8f8f8;border: 1px solid #ccc;}
+	</style>
+  </head>
+  <body>
+	<pre>
+		var arr=[];
+		var arr1=new Array();
+	</pre>
+	<p>arr与arr1均是空数组,长度为0,但是new Array需要调用Array的构造器,效率比前者低点</p>
+	<p><code>concat</code> 连接两个或更多的数组，并返回结果</p>
+	<pre>
+		var arr1=[1,2,3];
+		var arr2=[4,5,6];
+		var arr3=[7];
+		var arr=arr1.concat(arr2,arr3);
+		arr-result:1,2,3,4,5,6,7
+	</pre>
+	<p><code>join</code> 把数组中的所有元素放入一个字符串。元素是通过指定的分隔符(默认",")进行分隔的。</p>
+	<pre>
+		var arr=[1,2,3];
+		var str=arr.join("-");
+		str-result:1-2-3
+	</pre>
+	<p><code>pop</code> 删除并返回数组的最后一个元素</p>
+
+	
+	
+	push
+	reverse
+	shift
+	slice
+	sort
+	splice
+	unshift
+
+	<script>
+		var arr=[];
+		alert(arr[1]);
+	</script>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
